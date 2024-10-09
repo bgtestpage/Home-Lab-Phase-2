@@ -1,4 +1,4 @@
-<h1>Home Lab Phase 2 (buckle in, this Phase is a long one)</h1>
+<h1>Home Lab Phase 2 (buckle in, this phase is a long one)</h1>
 
 
 <h2>Installation of Home Lab Network Devices</h2>
