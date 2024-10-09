@@ -1,7 +1,7 @@
-<h1>Home Lab Phase 2 (buckle in, this phase is a long one)</h1>
+# Home Lab Phase 2 (buckle in, this phase is a long one)
 
 
-<h2>Installation of Home Lab Network Devices</h2>
+## Installation of Home Lab Network Devices
 
 <p>Inspect input and output ports on all devices to plan for proper physical connections of network devices.
 In this section we will visually inspect the physical ports and cabling for each device.</p>
@@ -57,7 +57,7 @@ From left to right.
   <img src="https://imgur.com/EQEF0Yr.png" height="80%" width="80%" alt="Table1.1"/><br /><br />
 </p>
 
-### Flow of ethernet cabling and associated ports on devices. 
+## Flow of ethernet cabling and associated ports on devices. 
 Each separate cable section is named ETH1, ETH2...etc. as they connect to each device.
 Main ethernet trunk:
 
@@ -91,7 +91,7 @@ Before we start the next section and momentarily lose a reliable internet connec
 - Visit https://www.downloads.netgear.com/files/GDC/GS108V3/GS108v3_IGprt_24sept2012.pdf  and download the managed switch manual.
 - Visit https://www.netgear.com/support/product/netgear-discovery-tool/#download and download the Netgear Discovery Tool for the appropriate OS (Windows for our case)
 
-### Install and Configure Firewall
+## Install and Configure Firewall
 
 ***Note***: Some network devices may have the same default IP address. If we attempt to add a new device and its default IP matches a device that already exists on the network, an IP conflict will occur. If this is the case, communication between the devices cannot take place because they share the same IP address. Installation and configuration will not be possible.
 
@@ -192,7 +192,7 @@ Next, we configure the OPT (optional) port of the firewall. This will serve as t
   - Click OPT interface tab.
   - Enable Outbound NAT for the new OPT interface (this is applied to the LAN interface by default, so we don’t need to activate NAT for the LAN interface).
 
-### Firewall Configuration
+## Firewall Configuration
 
 Finally, we must configure manual firewall rules for the OPT interface we have enabled, or communication will not take place. Firewall rules are automatically applied to the LAN interface by default, so we only need to do this for the OPT interface.
 
@@ -209,7 +209,7 @@ Finally, we must configure manual firewall rules for the OPT interface we have e
     - Click Save.
     - Click Apply.
 
-  ### Firewall Rules Configuration
+  ## Firewall Rules Configuration
 
 - Click Add:
   - Action: Allow
@@ -262,7 +262,7 @@ Finally, we must configure manual firewall rules for the OPT interface we have e
 - Logout of the firewall GUI.
 - Unplug power from the firewall device.
 
-### Install and Configure Managed Switch:
+## Install and Configure Managed Switch:
 
 - Unzip the Discovery Tool (NSDT) we downloaded earlier.
 - Start the NSDT to install the program.
@@ -292,7 +292,7 @@ Finally, we must configure manual firewall rules for the OPT interface we have e
   - Unplug the ethernet cable from the computer and the switch.
 - Power off the switch (unplug).
 
-### Installation of Personal Computer
+## Installation of Personal Computer
 
 - This step can take place after all devices are connected and the PC is powered on for the first boot up.
 - Connect all devices according to the ethernet cabling descriptions provided in the earlier section:
@@ -309,7 +309,7 @@ Finally, we must configure manual firewall rules for the OPT interface we have e
 - Follow the simple steps of Windows installation.
 - Now we see the Windows home screen and our process is complete.
 
-### Diagram of subnets, domains, devices, IPs, gateways, subnet masks and DHCP pools. 
+## Diagram of subnets, domains, devices, IPs, gateways, subnet masks and DHCP pools. 
 <p align="center">
   <br/>
   <img src="https://imgur.com/jYWfrDr.png" height="80%" width="80%" alt="Table1.1"/><br /><br />
